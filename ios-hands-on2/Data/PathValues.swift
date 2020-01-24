@@ -9,6 +9,5 @@
 import Foundation
 
 enum PathValues {
-    static let GET_ADDRESS = "http://zipcloud.ibsnet.co.jp/api/search"
-    
+    static let GET_ADDRESS = "https://zip-cloud.appspot.com/api/search"
 }

@@ -12,10 +12,11 @@ import RxSwift
 
 class TopViewController: UIViewController {
     private let disposeBag = DisposeBag()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         getAddress()
     }
     
@@ -25,7 +26,7 @@ class TopViewController: UIViewController {
         print(Repository.get())
         
         // zipCodeを適当に変更するとErrorに分岐するはず
-        Repository.getAddress(zipCode: "2790031")
+        Repository.getAddress(zipCode: "1500013")
             .subscribe(
                 onNext: { response in
                     print(response)
