@@ -1,4 +1,3 @@
-# ios-hands-on-2
 ## 概要
 夕学iOSハンズオン用のサンプルプロジェクトです。
 このサンプルは、iOSアプリ開発初心者を対象としています。
@@ -9,16 +8,16 @@
 3. RxSwift（Reactive Programming in Swift）の導入
 4. GET APIを叩く → レスポンスをさばく
 
-ライブラリの導入とAPI通信ができるようになるので
-あとは工夫次第で結構なものが作れる様になるはずです。
+ライブラリの導入とAPI通信ができるようになるのであとは工夫次第で結構なものが作れる様になるはずです。
 
-導入の参考
+###導入の参考
 https://cocoapods.org/
 https://github.com/Alamofire/Alamofire
 https://github.com/ReactiveX/RxSwift
-
-Codable
+  
+###Codable  
 https://qiita.com/s_emoto/items/deda5abcb0adc2217e86
 
-人気ライブラリ
+
+###人気ライブラリ  
 https://qiita.com/kohei1218/items/275fcee7406395919885
