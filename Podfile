@@ -7,6 +7,8 @@ target 'ios-hands-on2' do
 
   # Pods for ios-hands-on2
     pod "Alamofire"
+    pod 'RxSwift', '~> 5'
+    pod 'RxCocoa', '~> 5'
 
   target 'ios-hands-on2Tests' do
     inherit! :search_paths
