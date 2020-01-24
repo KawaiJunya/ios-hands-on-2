@@ -10,17 +10,18 @@ import UIKit
 import Alamofire
 import RxSwift
 
-class ViewController: UIViewController {
-
-    private var addresses: AddressModel?
+class TopViewController: UIViewController {
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        getAddress()
+    }
+    
+    func getAddress(){
         print("Start")
-
         print(Repository.get())
-
         Repository.getAddress(zipCode: "2790031")
             .subscribe(
                 onNext: { response in
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
                 onCompleted: {
                     print("complete")
                 }
-          )
+            ).disposed(by: disposeBag)
     }
 }
 

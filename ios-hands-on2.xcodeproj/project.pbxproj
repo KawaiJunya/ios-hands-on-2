@@ -13,7 +13,7 @@
 		39495F1C23DA8B4600363945 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39495F1B23DA8B4600363945 /* Repository.swift */; };
 		39A93D5E23D864380059DB62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A93D5D23D864380059DB62 /* AppDelegate.swift */; };
 		39A93D6023D864380059DB62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A93D5F23D864380059DB62 /* SceneDelegate.swift */; };
-		39A93D6223D864380059DB62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A93D6123D864380059DB62 /* ViewController.swift */; };
+		39A93D6223D864380059DB62 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A93D6123D864380059DB62 /* TopViewController.swift */; };
 		39A93D6523D864380059DB62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A93D6323D864380059DB62 /* Main.storyboard */; };
 		39A93D6723D8643A0059DB62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A93D6623D8643A0059DB62 /* Assets.xcassets */; };
 		39A93D6A23D8643A0059DB62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A93D6823D8643A0059DB62 /* LaunchScreen.storyboard */; };
@@ -49,7 +49,7 @@
 		39A93D5A23D864380059DB62 /* ios-hands-on2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-hands-on2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A93D5D23D864380059DB62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39A93D5F23D864380059DB62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		39A93D6123D864380059DB62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39A93D6123D864380059DB62 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		39A93D6423D864380059DB62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39A93D6623D8643A0059DB62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39A93D6923D8643A0059DB62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,6 +121,23 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		39495F1D23DA99DE00363945 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				39495F1E23DA99E800363945 /* Top */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		39495F1E23DA99E800363945 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				39A93D6123D864380059DB62 /* TopViewController.swift */,
+				39A93D6323D864380059DB62 /* Main.storyboard */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
 		39A93D5123D864380059DB62 = {
 			isa = PBXGroup;
 			children = (
@@ -149,10 +166,9 @@
 				39495F1823DA88E100363945 /* Data */,
 				39495F1723DA886300363945 /* Repository */,
 				39495F1423DA76AD00363945 /* Model */,
+				39495F1D23DA99DE00363945 /* UI */,
 				39A93D5D23D864380059DB62 /* AppDelegate.swift */,
 				39A93D5F23D864380059DB62 /* SceneDelegate.swift */,
-				39A93D6123D864380059DB62 /* ViewController.swift */,
-				39A93D6323D864380059DB62 /* Main.storyboard */,
 				39A93D6623D8643A0059DB62 /* Assets.xcassets */,
 				39A93D6823D8643A0059DB62 /* LaunchScreen.storyboard */,
 				39A93D6B23D8643A0059DB62 /* Info.plist */,
@@ -442,7 +458,7 @@
 			files = (
 				39495F1A23DA890300363945 /* PathValues.swift in Sources */,
 				39495F1623DA76D300363945 /* AddressModel.swift in Sources */,
-				39A93D6223D864380059DB62 /* ViewController.swift in Sources */,
+				39A93D6223D864380059DB62 /* TopViewController.swift in Sources */,
 				39A93D5E23D864380059DB62 /* AppDelegate.swift in Sources */,
 				39A93D6023D864380059DB62 /* SceneDelegate.swift in Sources */,
 				39495F1C23DA8B4600363945 /* Repository.swift in Sources */,
