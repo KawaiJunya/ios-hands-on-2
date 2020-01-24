@@ -22,23 +22,25 @@ class Repository {
     
     static func getAddress(zipCode: String) -> Observable<AddressModel> {
         let parameters: [String: Any] = ["zipcode": zipCode]
-        let headers: HTTPHeaders = ["Content-Type": "application/json"]
+        let headers:    HTTPHeaders   = ["Content-Type": "application/json"]
         
         return Observable.create { observer in
             Alamofire.request(
                 PathValues.GET_ADDRESS,
-                method: .get,
+                method:     .get,
                 parameters: parameters,
-                encoding: URLEncoding(destination: .queryString),
-                headers: headers
+                encoding:   URLEncoding(destination: .queryString),
+                headers:    headers
             ).responseJSON { response in
                 do {
+                    // response.dataがnilならelse文に入り、
+                    // nilでなければでdataにreesponse.dataを代入してOptionalをアンラップする
                     guard let data = response.data else {
                         throw ResponseError.none
                     }
+                    //Jsonをモデルにデコード
                     let result = try JSONDecoder().decode(AddressModel.self, from: data)
                     observer.onNext(result)
-                    observer.onCompleted()
                 } catch let error {
                     observer.onError(error)
                 }

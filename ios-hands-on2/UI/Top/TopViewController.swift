@@ -21,7 +21,10 @@ class TopViewController: UIViewController {
     
     func getAddress(){
         print("Start")
+        
         print(Repository.get())
+        
+        // zipCodeを適当に変更するとErrorに分岐するはず
         Repository.getAddress(zipCode: "2790031")
             .subscribe(
                 onNext: { response in
@@ -29,9 +32,6 @@ class TopViewController: UIViewController {
                 },
                 onError: { error in
                     print(error)
-                },
-                onCompleted: {
-                    print("complete")
                 }
             ).disposed(by: disposeBag)
     }
